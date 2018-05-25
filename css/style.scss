@@ -21,11 +21,18 @@ header{
 		}
 	}
 	.introduction{
+		display: inline;
 		ul{
 			display: flex;
 			justify-content: center;
+			padding: 45px 0 0;
 			li{
 				margin: 0 0 0 20px;
+				position: relative;
+				transition: 0.5s;
+				&:hover{
+					border-bottom: 3px solid #32818C;
+				}
 			}
 		}
 	}
@@ -38,6 +45,20 @@ header{
 }
 // wrappage
 .wrappage{
+	.title-block{
+		text-align: center;
+		margin: 50px 0 0;
+		border-top: 3px solid #32818C;
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 30px;
+			display: inline-block;
+			margin: -15px 0 0;
+			background: #F9F9F9;
+			padding: 0 20px;
+		}
+	}
 	//particles
 	.particles {
 		.count-particles{
@@ -651,9 +672,9 @@ header{
 			padding: 0 10px;
 			border: 0;
 		}
-		button{
+		a{
 			border-radius: 0;
-			height: 38px;
+			height: 40px;
 			padding: 0 15px;
 			font-weight: 400;
 			letter-spacing: 0;
@@ -662,6 +683,8 @@ header{
 			border: 1px double #ccc;
 			cursor: pointer;
 			transition: 1s;
+			line-height: 38px;
+			display: inline-block;
 			&:hover{
 				background: red;
 			}
