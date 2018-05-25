@@ -59,8 +59,14 @@ header {
   /* portfolio */ }
   .wrappage .title-block {
     text-align: center;
-    margin: 50px 0 0;
-    border-top: 3px solid #32818C; }
+    margin: 80px 0 0;
+    border-top: 3px solid #32818C;
+    display: inline-block;
+    width: 100%; }
+    .wrappage .title-block.--portfolio {
+      margin-bottom: 50px; }
+      .wrappage .title-block.--portfolio h2 {
+        background: #fff; }
     .wrappage .title-block h2 {
       text-align: center;
       text-transform: uppercase;
@@ -248,6 +254,8 @@ header {
     float: left; }
     .wrappage .ps-timeline-sec .container {
       position: relative; }
+      .wrappage .ps-timeline-sec .container .title-block h2 {
+        background: #fff; }
       @media screen and (max-width: 767px) {
         .wrappage .ps-timeline-sec .container ul:before {
           background: #348e80;
@@ -454,9 +462,10 @@ header {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -20px;
-      position: relative; }
+      position: relative;
+      justify-content: center; }
       .wrappage .portfolio ul li {
-        margin: 5px 0 0;
+        margin: 10px 20px;
         border: 6px solid #aaa; }
         .wrappage .portfolio ul li img {
           vertical-align: middle;

@@ -47,8 +47,16 @@ header{
 .wrappage{
 	.title-block{
 		text-align: center;
-		margin: 50px 0 0;
+		margin: 80px 0 0;
 		border-top: 3px solid #32818C;
+		display: inline-block;
+		width: 100%;
+		&.--portfolio{
+			margin-bottom: 50px;
+			h2{
+				background: #fff;
+			}
+		}
 		h2{
 			text-align: center;
 			text-transform: uppercase;
@@ -321,6 +329,11 @@ header{
 		float: left;
 	    .container {
 	        position: relative;
+	        .title-block{
+	        	h2{
+	        		background: #fff;
+	        	}
+	        }
 	        ul {
 	            @include respond-to(xs) {
 	                &:before {
@@ -607,8 +620,9 @@ header{
 			flex-wrap: wrap;
 			margin: 0 -20px;
 			position: relative;
+			justify-content: center;
 			li{
-				margin: 5px 0 0;
+				margin: 10px 20px;
 				border: 6px solid #aaa;
 				img{
 					vertical-align: middle;
