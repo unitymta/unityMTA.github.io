@@ -498,23 +498,6 @@ header {
           vertical-align: middle;
           transition: 1s;
           z-index: 1; }
-        .wrappage .portfolio ul li:hover button {
-          display: block; }
-        .wrappage .portfolio ul li .show {
-          position: absolute;
-          left: 60px;
-          top: 50px;
-          z-index: 1; }
-        .wrappage .portfolio ul li .content {
-          display: none;
-          position: absolute;
-          background: red;
-          width: 100%;
-          opacity: 0.5;
-          left: 0;
-          bottom: 0;
-          top: 0;
-          right: 0; }
 
 .footer .footer-top {
   background: #313131;
@@ -569,10 +552,12 @@ header {
     color: #aaa;
     position: relative; }
   .footer .footer-bottom .footer-bottom-content {
-    padding: 50px 0 0; }
+    padding: 50px 0;
+    display: inline-block;
+    width: 100%; }
     .footer .footer-bottom .footer-bottom-content .logo-footer {
       display: inline-block;
-      width: 20%; }
+      width: 22%; }
       .footer .footer-bottom .footer-bottom-content .logo-footer img {
         width: 200px;
         border-radius: 15px;
@@ -589,12 +574,34 @@ header {
           font-size: 16px;
           top: 0px; }
     .footer .footer-bottom .footer-bottom-content .footer-links {
-      width: 80%;
-      float: right; }
+      width: 78%;
+      float: right;
+      display: table; }
+      .footer .footer-bottom .footer-bottom-content .footer-links div {
+        display: table-cell;
+        padding: 0 0 0 50px;
+        border-left: 1px solid #32818C; }
+        .footer .footer-bottom .footer-bottom-content .footer-links div li {
+          margin: 0 0 10px; }
       .footer .footer-bottom .footer-bottom-content .footer-links h3 {
         font-size: 14px;
         color: #fff;
         text-transform: uppercase;
-        font-weight: 800; }
+        font-weight: 800;
+        margin: 0 0 15px; }
+      .footer .footer-bottom .footer-bottom-content .footer-links .follow-accept a i {
+        width: 35px;
+        height: 35px;
+        background: #32818C;
+        display: table-cell;
+        border-radius: 5px;
+        vertical-align: middle;
+        text-align: center;
+        transition: 1s; }
+        .footer .footer-bottom .footer-bottom-content .footer-links .follow-accept a i:hover {
+          transform: rotate(360deg); }
+  .footer .footer-bottom .copy-right p {
+    text-align: center;
+    margin: 0 0 50px; }
 
 /*# sourceMappingURL=style.css.map */
