@@ -57,7 +57,8 @@ header {
           color: #fff;
           line-height: 25px;
           left: 30px;
-          top: 30px; }
+          top: 35px;
+          text-align: center; }
           header .links ul li .tooltip p {
             color: #fff; }
         header .links ul li:hover, header .links ul li.active {
