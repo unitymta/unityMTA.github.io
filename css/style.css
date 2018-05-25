@@ -47,7 +47,7 @@ header {
         margin: 0 0 0 20px;
         position: relative;
         transition: 0.5s; }
-        header .introduction ul li:hover {
+        header .introduction ul li:hover, header .introduction ul li.active {
           border-bottom: 3px solid #32818C; }
 
 #stats {

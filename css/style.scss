@@ -30,7 +30,7 @@ header{
 				margin: 0 0 0 20px;
 				position: relative;
 				transition: 0.5s;
-				&:hover{
+				&:hover, &.active{
 					border-bottom: 3px solid #32818C;
 				}
 			}
