@@ -661,29 +661,6 @@ header{
 					transition: 1s;
 					z-index: 1;
 				}
-				&:hover{
-					button{
-						display: block;
-					}
-				}
-				.show{
-					// display: none;
-					position: absolute;
-					left: 60px;
-					top: 50px;
-					z-index: 1;
-				}
-				.content{
-					display: none;
-					position: absolute;
-					background: red;
-					width: 100%;
-					opacity: 0.5;
-					left: 0;
-					bottom: 0;
-					top: 0;
-					right: 0;
-				}
 			}
 		}
 	}
