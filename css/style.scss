@@ -643,11 +643,11 @@ header{
 			li{
 				margin: 10px 20px;
 				border: 6px solid #aaa;
-				img{
-					vertical-align: middle;
-					transition: 1s;
-					z-index: 1;
-					&:hover{
+				line-height: 120px;
+				background: #32818C;
+				&:hover{
+					cursor: pointer;
+					img{
 						transform: scale(1.5);
 						-ms-transform: scale(1.5);
 	    				-webkit-transform: scale(1.5);
@@ -655,6 +655,11 @@ header{
 	    				border-radius: 5px;
 	    				cursor: pointer;
 					}
+				}
+				img{
+					vertical-align: middle;
+					transition: 1s;
+					z-index: 1;
 				}
 				&:hover{
 					button{
