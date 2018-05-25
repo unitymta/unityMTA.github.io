@@ -20,7 +20,7 @@ header{
 			box-shadow: 5px 5px 5px 5px;
 		}
 	}
-	.introduction{
+	.links{
 		display: inline;
 		ul{
 			display: flex;
@@ -30,8 +30,26 @@ header{
 				margin: 0 0 0 20px;
 				position: relative;
 				transition: 0.5s;
+				.tooltip{
+					display: none;
+					position: absolute;
+					width: 250px;
+					background: #2E2F30;
+					padding: 0 10px;
+					border-radius: 10px;
+					color: #fff;
+					line-height: 25px;
+					left: 30px;
+					top: 30px;
+					p{
+						color: #fff;
+					}
+				}
 				&:hover, &.active{
 					border-bottom: 3px solid #32818C;
+				}
+				&:hover .tooltip{
+					display: block;
 				}
 			}
 		}

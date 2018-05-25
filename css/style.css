@@ -37,18 +37,33 @@ header {
       border-radius: 20px;
       filter: drop-shadow(8px 8px 10px gray);
       box-shadow: 5px 5px 5px 5px; }
-  header .introduction {
+  header .links {
     display: inline; }
-    header .introduction ul {
+    header .links ul {
       display: flex;
       justify-content: center;
       padding: 45px 0 0; }
-      header .introduction ul li {
+      header .links ul li {
         margin: 0 0 0 20px;
         position: relative;
         transition: 0.5s; }
-        header .introduction ul li:hover, header .introduction ul li.active {
+        header .links ul li .tooltip {
+          display: none;
+          position: absolute;
+          width: 250px;
+          background: #2E2F30;
+          padding: 0 10px;
+          border-radius: 10px;
+          color: #fff;
+          line-height: 25px;
+          left: 30px;
+          top: 30px; }
+          header .links ul li .tooltip p {
+            color: #fff; }
+        header .links ul li:hover, header .links ul li.active {
           border-bottom: 3px solid #32818C; }
+        header .links ul li:hover .tooltip {
+          display: block; }
 
 #stats {
   display: none;
