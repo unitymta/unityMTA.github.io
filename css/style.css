@@ -448,7 +448,7 @@ header {
     display: inline-block;
     position: relative; }
     .wrappage .portfolio::after {
-      background: url(../images/background-portfolio.jpg) no-repeat center center;
+      background: url(../images/background-portfolio.png) no-repeat center center;
       background-size: cover;
       position: absolute;
       left: 0;
@@ -475,7 +475,9 @@ header {
             transform: scale(1.5);
             -ms-transform: scale(1.5);
             -webkit-transform: scale(1.5);
-            box-shadow: 0px 0px 5px 5px #32818C; }
+            box-shadow: 0px 0px 5px 5px #32818C;
+            border-radius: 5px;
+            cursor: pointer; }
         .wrappage .portfolio ul li:hover button {
           display: block; }
         .wrappage .portfolio ul li .show {
