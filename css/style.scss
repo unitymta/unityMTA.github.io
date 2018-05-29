@@ -614,6 +614,31 @@ header{
 	        }
 	    }
 	}
+	
+	/*team-support*/
+	.team-support{
+		display: inline-block;
+		width: 100%;
+		float: left;
+		.team-support-inner{
+			margin: 40px 0 0;
+			button{
+				background: #32818C;
+				border-radius: 20px;
+				width: 25px;
+				height: 25px;
+			}
+			.slick-slide{
+				img{
+					margin: 0 auto;
+					transition: 1.5s;
+					&:hover{
+						transform: rotate(360deg);
+					}
+				}
+			} 
+		}
+	}
 
 	/* portfolio */
 	.portfolio{

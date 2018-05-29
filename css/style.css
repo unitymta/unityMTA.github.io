@@ -72,6 +72,7 @@ header {
   overflow: hidden; }
 
 .wrappage {
+  /*team-support*/
   /* portfolio */ }
   .wrappage .title-block {
     text-align: center;
@@ -457,6 +458,22 @@ header {
             position: absolute;
             margin-top: 70px;
             width: 100%; }
+  .wrappage .team-support {
+    display: inline-block;
+    width: 100%;
+    float: left; }
+    .wrappage .team-support .team-support-inner {
+      margin: 40px 0 0; }
+      .wrappage .team-support .team-support-inner button {
+        background: #32818C;
+        border-radius: 20px;
+        width: 25px;
+        height: 25px; }
+      .wrappage .team-support .team-support-inner .slick-slide img {
+        margin: 0 auto;
+        transition: 1.5s; }
+        .wrappage .team-support .team-support-inner .slick-slide img:hover {
+          transform: rotate(360deg); }
   .wrappage .portfolio {
     padding: 50px 0;
     width: 100%;
