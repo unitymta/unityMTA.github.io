@@ -647,6 +647,8 @@ header{
 				background: #32818C;
 				&:hover{
 					cursor: pointer;
+					background: #fff;
+					transition: 2s;
 					img{
 						transform: scale(1.5);
 						-ms-transform: scale(1.5);
