@@ -620,6 +620,11 @@ header{
 		display: inline-block;
 		width: 100%;
 		float: left;
+		.title-block{
+			h2{
+				background: #fff;
+			}
+		}
 		.team-support-inner{
 			margin: 40px 0 0;
 			button{
