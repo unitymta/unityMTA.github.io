@@ -486,7 +486,9 @@ header {
         line-height: 120px;
         background: #32818C; }
         .wrappage .portfolio ul li:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          background: #fff;
+          transition: 2s; }
           .wrappage .portfolio ul li:hover img {
             transform: scale(1.5);
             -ms-transform: scale(1.5);
