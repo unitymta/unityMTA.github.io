@@ -471,7 +471,9 @@ header {
         height: 25px; }
       .wrappage .team-support .team-support-inner .slick-slide img {
         margin: 0 auto;
-        transition: 1.5s; }
+        transition: 1.5s;
+        max-width: 100%;
+        max-height: 120px; }
         .wrappage .team-support .team-support-inner .slick-slide img:hover {
           transform: rotate(360deg); }
   .wrappage .portfolio {

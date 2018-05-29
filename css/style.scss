@@ -632,6 +632,8 @@ header{
 				img{
 					margin: 0 auto;
 					transition: 1.5s;
+					max-width: 100%;
+					max-height: 120px;
 					&:hover{
 						transform: rotate(360deg);
 					}
