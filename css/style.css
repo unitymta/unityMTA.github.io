@@ -8,12 +8,6 @@
   text-decoration: none;
   color: #000; }
 
-.container {
-  width: 1140px;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box; }
-
 ol, a, ul, li {
   list-style: none;
   line-height: 25px; }
@@ -22,6 +16,23 @@ canvas {
   display: block;
   vertical-align: bottom;
   max-height: 500px; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .container {
+      width: 768px; } }
+  @media (min-width: 939px) {
+    .container {
+      width: 939px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 980px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1160px; } }
 
 header {
   display: inline-block;
@@ -61,6 +72,14 @@ header {
           text-align: center; }
           header .links ul li .tooltip p {
             color: #fff; }
+            @media (max-width: 991px) {
+              header .links ul li .tooltip p {
+                font-size: 12px; } }
+          @media (max-width: 991px) {
+            header .links ul li .tooltip {
+              width: 200px;
+              line-height: 15px;
+              padding: 5px; } }
         header .links ul li:hover, header .links ul li.active {
           border-bottom: 3px solid #32818C; }
         header .links ul li:hover .tooltip {
@@ -143,6 +162,9 @@ header {
     .wrappage .skill .skill-inner {
       width: 50%;
       float: left; }
+      @media (max-width: 767px) {
+        .wrappage .skill .skill-inner {
+          width: 100%; } }
       .wrappage .skill .skill-inner .progress {
         width: 150px;
         height: 150px;
@@ -212,6 +234,13 @@ header {
           max-width: 415px;
           width: 415px;
           padding: 0 0 0 50px; }
+          @media (max-width: 1199px) {
+            .wrappage .skill .skill-inner .progress .info-skill {
+              padding: 0 0 0 20px;
+              width: 330px; } }
+          @media (min-width: 768px) and (max-width: 938px) {
+            .wrappage .skill .skill-inner .progress .info-skill {
+              width: 225px; } }
         .wrappage .skill .skill-inner .progress.blue .progress-bar {
           border-color: #049dff; }
         .wrappage .skill .skill-inner .progress.blue .progress-left .progress-bar {
@@ -262,7 +291,14 @@ header {
     .wrappage .skill .introduction {
       width: 50%;
       float: right;
-      margin: 50px 0 0; }
+      margin: 50px 0 0;
+      padding: 0 0 0 10px; }
+      .wrappage .skill .introduction iframe {
+        width: 100%; }
+      @media (max-width: 767px) {
+        .wrappage .skill .introduction {
+          width: 100%;
+          padding: 0; } }
   .wrappage .ps-timeline-sec {
     position: relative;
     background: #fff;
@@ -298,13 +334,11 @@ header {
           padding-left: 0 !important;
           padding-top: 120px !important;
           border-top: 0 !important;
-          margin-left: 25px !important; }
+          margin-left: 40px !important; }
           .wrappage .ps-timeline-sec .container ul.ps-timeline li {
             height: 220px;
             float: none !important;
             width: inherit !important; }
-            .wrappage .ps-timeline-sec .container ul.ps-timeline li:nth-child(2) .img-handler-bot img {
-              width: 70px; }
             .wrappage .ps-timeline-sec .container ul.ps-timeline li:last-child {
               margin: 0;
               bottom: 0 !important;
@@ -436,14 +470,16 @@ header {
             width: 100%; }
             .wrappage .ps-timeline-sec .container ul.ps-timeline li .img-handler-top img {
               display: table;
-              margin: 0 auto; }
+              margin: 0 auto;
+              max-width: 100%; }
           .wrappage .ps-timeline-sec .container ul.ps-timeline li .img-handler-bot {
             position: absolute;
             margin-top: 60px;
             width: 100%; }
             .wrappage .ps-timeline-sec .container ul.ps-timeline li .img-handler-bot img {
               display: table;
-              margin: 0 auto; }
+              margin: 0 auto;
+              max-width: 100%; }
           .wrappage .ps-timeline-sec .container ul.ps-timeline li p {
             text-align: center;
             width: 80%;
@@ -465,12 +501,19 @@ header {
     .wrappage .team-support .title-block h2 {
       background: #fff; }
     .wrappage .team-support .team-support-inner {
-      margin: 40px 0 0; }
+      margin: 40px 0 0;
+      padding: 0 25px; }
       .wrappage .team-support .team-support-inner button {
         background: #32818C;
         border-radius: 20px;
         width: 25px;
         height: 25px; }
+        .wrappage .team-support .team-support-inner button.slick-prev {
+          left: 0;
+          z-index: 1; }
+        .wrappage .team-support .team-support-inner button.slick-next {
+          right: 0;
+          z-index: 1; }
       .wrappage .team-support .team-support-inner .slick-slide img {
         margin: 0 auto;
         transition: 1.5s;
@@ -517,6 +560,11 @@ header {
             box-shadow: 0px 0px 5px 5px #32818C;
             border-radius: 5px;
             cursor: pointer; }
+            @media (min-width: 768px) and (max-width: 938px) {
+              .wrappage .portfolio ul li:hover img {
+                transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                -webkit-transform: scale(0.8); } }
         .wrappage .portfolio ul li img {
           vertical-align: middle;
           transition: 1s;
@@ -573,7 +621,12 @@ header {
   background: #151515; }
   .footer .footer-bottom p, .footer .footer-bottom a {
     color: #aaa;
-    position: relative; }
+    position: relative;
+    margin: 0 0 5px;
+    display: inline-block; }
+    @media (min-width: 768px) and (max-width: 938px) {
+      .footer .footer-bottom p, .footer .footer-bottom a {
+        font-size: 13px; } }
   .footer .footer-bottom .footer-bottom-content {
     padding: 50px 0;
     display: inline-block;
@@ -604,8 +657,9 @@ header {
         display: table-cell;
         padding: 0 0 0 50px;
         border-left: 1px solid #32818C; }
-        .footer .footer-bottom .footer-bottom-content .footer-links div li {
-          margin: 0 0 10px; }
+        @media (min-width: 768px) and (max-width: 938px) {
+          .footer .footer-bottom .footer-bottom-content .footer-links div {
+            padding: 0 10px; } }
       .footer .footer-bottom .footer-bottom-content .footer-links h3 {
         font-size: 14px;
         color: #fff;
@@ -625,6 +679,7 @@ header {
           transform: rotate(360deg); }
   .footer .footer-bottom .copy-right p {
     text-align: center;
-    margin: 0 0 50px; }
+    margin: 0 0 50px;
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
