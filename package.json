@@ -1,0 +1,25 @@
+{
+  "name": "unitymta.github.io",
+  "version": "1.0.0",
+  "description": "introduction about unitymta",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-less": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "style.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unitymta/unityMTA.github.io.git"
+  },
+  "author": "unitymta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unitymta/unityMTA.github.io/issues"
+  },
+  "homepage": "https://github.com/unitymta/unityMTA.github.io#readme"
+}

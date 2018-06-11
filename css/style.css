@@ -738,4 +738,5 @@ header {
   .footer .footer-bottom .copy-right p {
     text-align: center;
     margin: 0 0 50px;
-    width: 100%; }
+    width: 100%;
+    color: #000; }
