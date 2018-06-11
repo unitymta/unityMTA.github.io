@@ -13,6 +13,23 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet">  
+		<style>
+			#reactjs {
+				width: 100%;
+				background-color: #ddd;
+				margin: 0 0 30px;
+			}
+			
+			#reactjs-inner{
+				width: 1%;
+				height: 30px;
+				background-color: #32818C;
+				overflow: hidden;
+				line-height: 30px;
+				padding: 0 20px;
+			}
+			 
+			</style>
 	</head>
 	<body>
 		<header class="header">
@@ -104,7 +121,12 @@
 									<li>Basic knowledge of Shopify theme</li>
 								</ul>
 			                </div>
-			            </div>
+						</div>
+						<div id="reactjs">
+							<div id="reactjs-inner">
+								Studying ReactJS loading...
+							</div>
+						</div>
 		            </div>
 		            <div class="introduction">
 		            	<iframe width="560" height="315" src="https://www.youtube.com/embed/wdX1yCp0I48" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -324,6 +346,21 @@
 			    }
 			  ] 
 			});	
+			
+			function move() {
+				var elem = document.getElementById("reactjs-inner"); 
+				var width = 1;
+				var id = setInterval(frame, 10);
+				function frame() {
+					if (width >= 100) {
+						clearInterval(id);
+					} else {
+						width++; 
+						elem.style.width = width + '%'; 
+					}
+				}
+			}
+			setInterval(move, 5000);
 		</script>
 		
 	</body>
