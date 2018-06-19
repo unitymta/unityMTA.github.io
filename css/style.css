@@ -287,7 +287,6 @@ header {
           border-color: #fdba04; }
         .wrappage .skill .skill-inner .progress.yellow .progress-left .progress-bar {
           animation: loading-2 2s linear forwards 2.8s; }
-
 @keyframes loading-5 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -295,7 +294,6 @@ header {
   100% {
     -webkit-transform: rotate(80deg);
     transform: rotate(80deg); } }
-
 @keyframes loading-4 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -303,7 +301,6 @@ header {
   100% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); } }
-
 @keyframes loading-3 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -311,7 +308,6 @@ header {
   100% {
     -webkit-transform: rotate(145deg);
     transform: rotate(145deg); } }
-
 @keyframes loading-2 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -319,7 +315,6 @@ header {
   100% {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg); } }
-
 @keyframes loading-1 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -656,7 +651,6 @@ header {
       margin: 0 -5px 0 0; }
     .footer .footer-top a.email {
       margin: 0 0 0 -5px; }
-
 .footer .footer-bottom {
   display: inline-block;
   width: 100%;
@@ -739,3 +733,5 @@ header {
     text-align: center;
     margin: 0 0 50px;
     width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
